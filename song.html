@@ -102,6 +102,7 @@
                 let song = song_data.albums[album_id].tracks[song_id];
 
                 song_title_elem.innerHTML = song.name;
+                document.title = song.name;
                 song_description.innerHTML = "Made by Nathaniel D'Rozario <br/> From <span style='font-style: italic;'>" + album.name + "</span> <br/>" + song.notes;
                 license_elem.innerHTML = song.recording_license;
 
