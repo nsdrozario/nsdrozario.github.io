@@ -1,0 +1,28 @@
+{
+    "albums":[
+
+            {
+            "name":"Quantum Superposition",
+            "tracks":[
+
+                {
+                    "name":"Eternal Voyage",
+                    "file":"music/eternalvoyage.wav",
+                    "sheet_music":"Coming soon",
+                    "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>.",
+                    "notes":"My very first track on this website."
+                },
+
+                {
+                    "name":"Infinitum",
+                    "file":"music/infinitum.wav",
+                    "sheet_music":"Coming soon",
+                    "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>.",
+                    "notes":"A more theory-heavy composition with an active bassline, unrelenting piano melody, and multiple harmonic modulations."                   
+                }
+
+            ]
+        }
+
+    ]
+}

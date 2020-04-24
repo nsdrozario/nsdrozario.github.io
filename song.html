@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nathaniel D'Rozario Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="background-color: rgb(31,31,31);">
+
+    <!-- Start: Navigation Clean -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="index.html">Nathaniel D'Rozario's Portfolio</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About Me</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- End: Navigation Clean -->
+
+    <section>
+        <div class="jumbotron text-left" style="height: 576px;">
+            <h1 class="text-left" id="song-title">Song Title</h1>
+            <audio id="music" controls>
+                <source id="audio-src" src="" type="audio/wav" />
+                Your browser unfortunately doesn't support the HTML5 audio tag. Please upgrade your browser.
+            </audio>
+
+            <p id="song-desc">Song Description</p>
+            <p id="license-text"></p>
+        </div>
+    </section>
+
+    <section style="background-color: #1f1f1f;">
+        <footer style="color: rgb(255,255,255);background-color: #1f1f1f;">
+            <div class="container">
+                <div class="row">
+                    <!-- Start: Services -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>Email: nsdrozario@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- End: Services -->
+                    <!-- Start: About -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a class='nav-item' href='about.html'>About Me</a></li>
+                            <li><a class='nav-item' href='legal.html'>Legal</a></li>
+                        </ul>
+                    </div>
+                    <!-- End: About -->
+                    <!-- Start: Footer Text -->
+                    <div class="col-md-6 item text">
+                        <h3>Nathaniel D'Rozario</h3>
+                        <p>Musician and programmer.</p>
+                    </div>
+                    <!-- End: Footer Text -->
+                </div>
+                <!-- Start: Copyright -->
+                <p class="text-center copyright">Nathaniel D'Rozario © 2020</p>
+                <!-- End: Copyright -->
+            </div>
+        </footer>
+    </section>
+
+    <script>
+
+        //song loader
+
+        let get_data = new URLSearchParams(location.search);
+        let album_id = get_data.get("a");
+        let song_id = get_data.get("s");
+        let xhttpreq = new XMLHttpRequest();
+        
+        let song_title_elem = document.getElementById("song-title"); 
+        let audio_elem = document.getElementById("music");
+        let audio_src = document.getElementById("audio-src");
+        let license_elem = document.getElementById("license-text");
+        let song_description = document.getElementById("song-desc");
+        var song_data;
+
+        function get_song_json() {
+            if (this.readyState == 4 && this.status == 200) {
+
+                song_data = JSON.parse(this.responseText);
+                
+                let album = song_data.albums[album_id];
+                let song = song_data.albums[album_id].tracks[song_id];
+
+                song_title_elem.innerHTML = song.name;
+                song_description.innerHTML = "Made by Nathaniel D'Rozario <br/> From <span style='font-style: italic;'>" + album.name + "</span> <br/>" + song.notes;
+                license_elem.innerHTML = song.recording_license;
+
+                audio_src.setAttribute("src", song.file);
+                audio_elem.load();
+
+            } else {
+            }
+        }
+
+        xhttpreq.onreadystatechange = get_song_json;
+        xhttpreq.open("GET", "json/songs.json", true);
+        xhttpreq.send();
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
