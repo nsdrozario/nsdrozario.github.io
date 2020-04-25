@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -14,25 +14,16 @@
 <body style="background-color: rgb(31,31,31);">
 
     <!-- Start: Navigation Clean -->
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="index.html">Nathaniel D'Rozario's Portfolio</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About Me</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
+    <div id="navbar-insert">
+    </div>
+    <script src="include/navbar.js"></script>
+
     <!-- End: Navigation Clean -->
 
     <section>
         <div class="jumbotron text-left" style="height: 576px;">
             <h1 class="text-left" id="song-title">Song Title</h1>
-            <audio id="music" controls>
+            <audio id="music" controls loop>
                 <source id="audio-src" src="" type="audio/wav" />
                 Your browser unfortunately doesn't support the HTML5 audio tag. Please upgrade your browser.
             </audio>

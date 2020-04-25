@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Nathaniel D'Rozario's Portfolio - Home</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
@@ -12,40 +12,38 @@
 </head>
 
 <body style="background-color: rgb(31,31,31);">
-    <!-- Start: Parallax Background -->
-    <div data-bs-parallax-bg="true" style="height: 500px;background-image: url(&quot;assets/img/space_background.png&quot;);background-position: center;background-size: cover;">
-        <!-- Start: Navigation Clean -->
-    <span id="navbar-insert">
-    </span>
-    <script src="include/navbar.js"></script>
-
-    
-    <!-- End: Navigation Clean -->
-    <h1 class="text-center" style="margin: 104px;margin-bottom: 112px;margin-top: 154px;color: rgb(255,255,255);">My Portfolio</h1>
+    <!-- Start: Navigation Clean -->
+    <div id="navbar-insert">
     </div>
-    <!-- End: Parallax Background -->
-    <div style="background-color: #1f1f1f;">
-        <div class="jumbotron text-center" style="margin: 0px 0px 0px;">
-            <h2 class="text-center">Music</h2>
-            <p>Discover my publicly available pieces:</p>
-            <p></p>
-            <div class="card">
-                <div class="card-body" style="filter: blur(0px) contrast(106%) hue-rotate(0deg) saturate(101%) sepia(0%);">
-                    <h4 class="card-title">Quantum Superposition</h4>
-                    <p class="card-text">My first album.</p>
-                    <ul>
-                        <li><a href='song.html?a=0&s=0'>Eternal Voyage</a></li>
-                        <li><a href='song.html?a=0&s=1'>Infinitum</a></li>
-                    </ul>
+    <script src="include/navbar.js"></script>
+    <!-- End: Navigation Clean -->
+    <!-- Start: Article Clean -->
+    <div class="article-clean" style="padding-bottom: 72px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <!-- Start: Intro -->
+                    <div class="intro">
+                        <h1 class="text-center" id="article-title"></h1>
+                        <!-- Start: Date and Author -->
+                        <p class="text-center"><span class="by">by</span> <a href="#">Nathaniel D'rozario</a><span class="date" id="article-date">April 23, 2020</span></p>
+                        <!-- End: Date and Author -->
+                    </div>
+                    <!-- End: Intro -->
+                    <!-- Start: Text -->
+                    <div class="article-text">
+                        
+                    </div>
+                    <script src="include/article_loader.js"></script>
+
+                    <!-- End: Text -->
                 </div>
             </div>
         </div>
-        <div class="jumbotron text-center" style="margin: 0px, 0px, 32px;">
-            <h2 class="text-center">Code</h2>
-            <p>Coming soon.</p>
-            <p></p>
-            <div class="card"></div>
-        </div>
+    </div>
+    <!-- End: Article Clean -->
+    <section></section>
+    <section style="background-color: #1f1f1f;">
         <footer style="color: rgb(255,255,255);background-color: #1f1f1f;">
             <div class="container">
                 <div class="row">
@@ -61,8 +59,8 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Information</h3>
                         <ul>
-                            <li><a class='nav-item' href='about.html'>About Me</a></li>
-                            <li><a class='nav-item' href='legal.html'>Legal</a></li>
+                            <li>About Me</li>
+                            <li>Legal</li>
                         </ul>
                     </div>
                     <!-- End: About -->
@@ -78,7 +76,7 @@
                 <!-- End: Copyright -->
             </div>
         </footer>
-    </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.min.js"></script>
