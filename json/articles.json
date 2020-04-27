@@ -1,0 +1,13 @@
+{
+    "articles":{
+        "theory":[
+            {
+                "name":"Getting Started",
+                "date":"April 24, 2020",
+                "file":"json/article_text/theory_getting_started.html"
+            }
+        ],
+        "code":[
+        ]
+    }
+}
