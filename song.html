@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="css/song.css" />
 </head>
 
 <body style="background-color: rgb(31,31,31);">
@@ -20,7 +21,7 @@
 
     <!-- End: Navigation Clean -->
 
-    <section>
+    <div>
         <div class="jumbotron text-left" style="height: 576px;">
             <h1 class="text-left" id="song-title">Song Title</h1>
             <audio id="music" controls loop>
@@ -30,10 +31,20 @@
 
             <p id="song-desc">Song Description</p>
             <p id="license-text"></p>
-        </div>
-    </section>
 
-    <section style="background-color: #1f1f1f;">
+            <p>
+                Download it here:
+                <a id='song-download'>  </a>
+            </p>
+
+            <p class='license-warning'>
+                Warning: Do NOT sample (i.e. remix snippets of) these recordings. No derivative works are allowed, but any other use 
+                that is permitted by the license above is allowed.
+            </p>
+        </div>
+    </div>
+
+    <div style="background-color: #1f1f1f;">
         <footer style="color: rgb(255,255,255);background-color: #1f1f1f;">
             <div class="container">
                 <div class="row">
@@ -66,7 +77,7 @@
                 <!-- End: Copyright -->
             </div>
         </footer>
-    </section>
+    </div>
 
     <script>
 
@@ -82,6 +93,7 @@
         let audio_src = document.getElementById("audio-src");
         let license_elem = document.getElementById("license-text");
         let song_description = document.getElementById("song-desc");
+        let download_element = document.getElementById("song-download");
         var song_data;
 
         function get_song_json() {
@@ -96,6 +108,10 @@
                 document.title = song.name;
                 song_description.innerHTML = "Made by Nathaniel D'Rozario <br/> From <span style='font-style: italic;'>" + album.name + "</span> <br/>" + song.notes;
                 license_elem.innerHTML = song.recording_license;
+
+                download_element.innerHTML = song.name;
+                donwload_element.setAttribute("href", song.file);
+                download_element.setAttribute("download", "");
 
                 audio_src.setAttribute("src", song.file);
                 audio_elem.load();
