@@ -30,6 +30,7 @@ function get_article_metadata() {
             
             let current_article = metadata.articles.theory[article_id];
             article_title.innerHTML = current_article.name;
+            document.title = current_article.name;
             article_date.innerHTML = current_article.date;     
             article_path = current_article.file;
 
