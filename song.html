@@ -33,8 +33,7 @@
             <p id="license-text"></p>
 
             <p>
-                Download it here:
-                <a id='song-download'>  </a>
+                <a class="btn btn-primary" id='song-download'>Download</a>
             </p>
 
             <p class='license-warning' href='' download>
@@ -109,7 +108,6 @@
                 song_description.innerHTML = "Made by Nathaniel D'Rozario <br/> From <span style='font-style: italic;'>" + album.name + "</span> <br/>" + song.notes;
                 license_elem.innerHTML = song.recording_license;
 
-                download_link.innerHTML = song.name;
                 download_link.setAttribute("href", song.file);
 
                 audio_src.setAttribute("src", song.file);
