@@ -20,8 +20,7 @@
     <!-- Start: Article Clean -->
     <div class="article-clean" style="padding-bottom: 72px;">
         <div class="container">
-            <div class="row">
-
+            <div>
                 <h1>Music Theory Tutorials</h1>
 
                 <p>
@@ -35,34 +34,55 @@
                     Below is a list of the currently available lessons on this website:
                 </p>
 
-               
-                <div id="table-of-contents">
-                    <h2 style='display: block;'>Music Theory</h2>
-                    <h3>Chapter 1: Basics</h3>
-                    <ul>
-                        <li><a href="article.html?category=theory&id=0">Getting Started</a></li>
-                    </ul>
+                <h2 style='display: block;'>Music Theory</h2>
+                <div id="table-of-contents" style="display:block;">
+                    
                 </div>
 
                 <script>
-                    /*
+                    
                     let xhrequest = new XMLHttpRequest();
-                    let contents = document.getElementByID("table-of-contents");
+                    let contents = document.getElementById("table-of-contents");
 
-                    function article_url_builder(id) {
+                    function article_url_builder(category, chapter_id, article_id) {
+                        if (category != "theory" && category != "code") { // code smell right here
+                            // i should probably recode this system so that there is an array of valid categories
+                            // shouldn't happen
+                            console.log("invalid article category while building urls for articles")
+                            return "error.html"
+                        } else {
+                            return "article.html?category="+category+"&chapter="+chapter_id+"&article="+article_id;
+                        }
+                    }
 
-                        // to be implemented
+                    function construct_articles() {
                         
+                        let data; 
+                        let parsed_data;
+
+                        if (this.readyState == 4 && this.status == 200) {
+                            data = this.responseText;
+                            parsed_data = JSON.parse(data);
+                            let chapter_index = 1;
+                            let article_index = 1;
+                            parsed_data.articles.theory.forEach(function(chapter){
+                                contents.innerHTML += "<div id='chapter-"+chapter.chapter_name+"'>"+
+                                    "<h3>Chapter " + chapter_index + ": " + chapter.chapter_name + "</h3>" +
+                                    "<ul id='chapter-'" + chapter.chapter_articles + "-article-list'></ul></div>";
+                                chapter.chapter_articles.forEach(function(article) {
+                                    document.getElementById("chapter-"+chapter.chapter_name).innerHTML += "<li><a href='" + article_url_builder("theory", chapter_index, article_index) + "'>" + article.name + "</a></li>";
+                                    article_index++;
+                                });
+                                chapter_index++;
+                            }
+                        );
+                    }
                     }
 
-                    function get_contents() {
-                        // to be implemented
-                    }
+                    xhrequest.onreadystatechange = construct_articles;
 
-                    xhrequest.onreadystatechange = get_contents;
-                    xhrequest.open("GET", "json/articles.json");
-
-                    */
+                    xhrequest.open("GET", "json/articles.json", true);
+                    xhrequest.send();
                 </script>
         </div>
     </div>

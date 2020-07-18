@@ -1,9 +1,13 @@
 let xhr2 = new XMLHttpRequest(); // i dont know what im doing
 let xhr3 = new XMLHttpRequest();
 let url_param = new URLSearchParams(location.search);
-let article_category = url_param.get("category");
-let article_id = url_param.get("id");
 
+// url parameters
+let article_category = url_param.get("category"); // string
+let chapter_id = url_param.get("chapter"); // int (1-indexed)
+let article_id = url_param.get("article"); // int (1-indexed)
+
+// where to output data
 let article_output = document.getElementById("article-text");
 let article_title = document.getElementById("article-title");
 let article_date = document.getElementById("article-date");
@@ -28,7 +32,7 @@ function get_article_metadata() {
             let metadata = JSON.parse(this.responseText);
             console.log("done");
             
-            let current_article = metadata.articles.theory[article_id];
+            let current_article = metadata.articles.theory[chapter_id-1].chapter_articles[article_id-1]; // need to fix this very soon when adding code articles
             article_title.innerHTML = current_article.name;
             document.title = current_article.name;
             article_date.innerHTML = current_article.date;     
@@ -40,8 +44,6 @@ function get_article_metadata() {
     }
 
 }
-
-
 
 xhr2.onreadystatechange = get_article_metadata; 
 xhr2.open("GET", "json/articles.json", true);

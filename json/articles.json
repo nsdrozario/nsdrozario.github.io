@@ -2,9 +2,19 @@
     "articles":{
         "theory":[
             {
-                "name":"Getting Started",
-                "date":"April 24, 2020",
-                "file":"json/article_text/theory_getting_started.html"
+                "chapter_name":"Basics",
+                "chapter_articles":[
+                    {
+                        "name":"Getting Started",
+                        "date":"April 24, 2020",
+                        "file":"json/article_text/theory_getting_started.html"
+                    },
+                    {
+                        "name":"Basic Chords",
+                        "date":"July 17, 2020",
+                        "file":"json/article_text/chords_1.html"
+                    }
+                ]
             }
         ],
         "code":[
