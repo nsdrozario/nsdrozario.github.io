@@ -17,8 +17,13 @@
                     {
                         "name":"Chord Progressions",
                         "date":"August 14, 2020",
-                        "file":"page_under_construction.html"
-                    }
+                        "file":"json/article_text/chord_progressions.html"
+                    },
+                    {
+                        "name":"Cadences",
+                        "date":"August 18, 2020",
+                        "file":"json/article_text/cadences.html"
+                    ]
                 ]
             }
         ],
