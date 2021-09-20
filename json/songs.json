@@ -27,9 +27,94 @@
                     "sheet_music":"Coming soon",
                     "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>.",
                     "notes":"A remastered and remade version of <a href='song.html?a=0&s=0'>Eternal Voyage</a>. This version has better-quality mixing of tracks, expanded sections, and more timbres."
-
+                },       
+                {
+                    "name":"Fugue in E Minor",
+                    "file":"music/classical/Nathaniel D'Rozario - Fugue in E Minor.wav",
+                    "sheet_music":"n/a",
+                    "notes":"",
+                    "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                },                
+                {
+                    "name":"",
+                    "file":"",
+                    "sheet_music":"n/a",
+                    "notes":""
+                },                
+                {
+                    "name":"",
+                    "file":"",
+                    "sheet_music":"n/a",
+                    "notes":""
                 }
-
+            ]
+        },
+        {
+            "name":"Covers",
+            "cover_art":"",
+            "tracks":[
+                {
+                    "name":"Shchedryk",
+                    "file":"music/christmas/Shchedryk.mp3",
+                    "sheet_music":"n/a",
+                    "notes":"Ukranian bell carol cover",
+                    "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                },
+                {
+                    "name":"God Rest You, Merry Gentlemen",
+                    "file":"music/christmas/God Rest You, Merry Gentlemen.mp3",
+                    "sheet_music":"n/a",
+                    "notes":"Cover of a classic",
+                    "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                },
+                {
+                    "name":"Deck the Halls",
+                    "file":"music/christmas/Deck the Halls (guitar).mp3",
+                    "sheet_music":"n/a",
+                    "notes":"",
+                    "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                }
+            ]
+        },
+        {
+            "name":"Revelation",
+            "cover_art":"",
+            "tracks":[
+                    {
+                        "name":"Battle",
+                        "file":"music/other/Battle.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Confusion",
+                        "file":"music/other/Confusion.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Fight or Flight",
+                        "file":"music/other/Fight or Flight.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Rain",
+                        "file":"music/other/Rain.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Sneaky",
+                        "file":"music/other/Sneaky.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    }
             ]
         }
 
