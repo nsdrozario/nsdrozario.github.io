@@ -22,8 +22,9 @@
     <!-- End: Navigation Clean -->
 
     <div>
-        <div class="jumbotron text-left" style="height: 576px;">
+        <div class="jumbotron text-left" style="height: 700px;">
             <h1 class="text-left" id="song-title">Song Title</h1>
+            <img src="" id="cover-art" width="200px" height="200px"/><br/>
             <audio id="music" controls loop>
                 <source id="audio-src" src="" type="audio/wav" />
                 Your browser unfortunately doesn't support the HTML5 audio tag. Please upgrade your browser.
@@ -107,7 +108,9 @@
                 document.title = song.name;
                 song_description.innerHTML = "Made by Nathaniel D'Rozario <br/> From <span style='font-style: italic;'>" + album.name + "</span> <br/>" + song.notes;
                 license_elem.innerHTML = song.recording_license;
-
+                if (album.cover_art) {
+                    document.getElementById("cover-art").src = album.cover_art;
+                }
                 download_link.setAttribute("href", song.file);
 
                 audio_src.setAttribute("src", song.file);
