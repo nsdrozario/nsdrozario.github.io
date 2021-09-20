@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nathaniel D'Rozario's Portfolio - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</head>
+
+<body style="background-color: rgb(31,31,31);">
+    <!-- Start: Parallax Background -->
+    <div data-bs-parallax-bg="true" style="height: 500px;background-image: url(&quot;assets/img/space_background.png&quot;);background-position: center;background-size: cover;">
+        <!-- Start: Navigation Clean -->
+    <span id="navbar-insert">
+    </span>
+    <script src="include/navbar.js"></script>
+
+    
+    <!-- End: Navigation Clean -->
+    <h1 class="text-center" style="margin: 104px;margin-bottom: 112px;margin-top: 154px;color: rgb(255,255,255);">Nathaniel D'Rozario's Portfolio</h1>
+    </div>
+    <!-- End: Parallax Background -->
+    <div style="background-color: #1f1f1f;">
+        <div class="jumbotron" style="margin: 0px 0px 0px;">
+            <h1>Music</h1>
+            <div id="music-div">
+
+            </div>
+            <script>
+
+                let songs_json = $.getJSON("json/songs.json", function(song_data) {
+                    let out = "";
+                    for (let j = 0; j < song_data["albums"].length; j++) {
+                        out += `<div><h3>${song_data["albums"][j].name}</h3></div>`
+                        for (let i = 0; i < song_data["albums"][j]["tracks"].length; i++) {
+                            out += `
+                            <div>
+                                <a href='song.html?a=${j}&s=${i}'> ${song_data["albums"][j]["tracks"][i].name}</a>
+                            </div>
+                            `
+                        }
+                    }
+                    $("#music-div").html(out);
+                });
+                
+            </script>
+        </div>
+        <footer style="color: rgb(255,255,255);background-color: #1f1f1f;">
+            <div class="container">
+                <div class="row">
+                    <!-- Start: Services -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>Email: nsdrozario@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- End: Services -->
+                    <!-- Start: About -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a class='nav-item' href='about.html'>About Me</a></li>
+                            <li><a class='nav-item' href='legal.html'>Legal</a></li>
+                        </ul>
+                    </div>
+                    <!-- End: About -->
+                    <!-- Start: Footer Text -->
+                    <div class="col-md-6 item text">
+                        <h3>Nathaniel D'Rozario</h3>
+                        <p>Musician and programmer.</p>
+                    </div>
+                    <!-- End: Footer Text -->
+                </div>
+                <!-- Start: Copyright -->
+                <p class="text-center copyright">Nathaniel D'Rozario © 2020</p>
+                <!-- End: Copyright -->
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
