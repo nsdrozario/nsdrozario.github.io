@@ -75,6 +75,47 @@
                     "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
                 }
             ]
+        },
+        {
+            "name":"Revelation",
+            "cover_art":"",
+            "tracks":[
+                    {
+                        "name":"Battle",
+                        "file":"music/other/Battle.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Confusion",
+                        "file":"music/other/Confusion.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Fight or Flight",
+                        "file":"music/other/Fight or Flight.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Rain",
+                        "file":"music/other/Rain.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    },
+                    {
+                        "name":"Sneaky",
+                        "file":"music/other/Sneaky.mp3",
+                        "notes":"",
+                        "sheet_music":"",
+                        "recording_license":"<a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nd/4.0/88x31.png' /></a><br />This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-nd/4.0/'>Creative Commons Attribution-NoDerivatives 4.0 International License</a>."
+                    }
+            ]
         }
 
     ]
